@@ -9,7 +9,6 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-
 .page {
   font-family: var(--font-main);
   font-size: var(--main-size-text);
