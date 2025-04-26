@@ -270,10 +270,7 @@
   opacity: 1;
   transition: fill 0.3s 0.05s linear;
 }
-.like-icon .main-body {
-  fill: transparent;
-  transition: fill 0.3s linear;
-}
+
 .like-icon:hover .main-body {
   fill: black;
   opacity: 1;
@@ -311,10 +308,7 @@
   fill: #FF0000;
   transition: fill 0.3s 0.3s ease-in;
 }
-.like-icon.is-liked .sparks {
-  fill: none;
-  transition: fill 0.3s 0.3s ease-in;
-}
+
 .dialog {
   border: 2px solid #000;
   padding: 30px;
