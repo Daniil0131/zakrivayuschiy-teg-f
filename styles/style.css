@@ -315,40 +315,44 @@
   fill: none;
   transition: fill 0.3s 0.3s ease-in;
 }
-.popover {
+.dialog {
+  border: 2px solid #000;
+  padding: 30px;
+  inline-size: 353px;
+  background-color: var(--background-color-text);
+}
+.dialog[open] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid #000;
-  padding: 30px;
-  inset: 0;
   justify-self: center;
-  inline-size: 353px;
-  background-color: var(--background-color-text);
+  inset: 0;
   z-index: 2;
 }
-.popover::backdrop {
+
+body:has(.dialog[open]) {
+  overflow: hidden;
+} 
+.dialog[open]::backdrop {
   background-color: rgba(0, 0, 0, 0.6);
 }
-.floppy-popover {
+
+.floppy-dialog {
   width: 85px;
 }
-.text-popover-cont {
+.text-dialog-cont {
   display: flex;
   gap: 20px;
 }
-.button-popover {
+.button-dialog {
   padding: 12.5px 132.5px;
   text-transform: uppercase;
   margin-block-start: 30px;
 }
-.text-popover {
+.text-dialog {
   font-size: calc(var(--main-size-text) - 4px);
   text-transform: uppercase;
   line-height: 150%;
-}
-.popover:not(:popover-open) {
-  display: none;
 }
 
 @keyframes heart-animation {
@@ -418,8 +422,7 @@
     height: 28px;
   }
   .button__save::after {
-   
-    height: 140px;
-    
+    inset: 0;
+    height: 75px;
   }
 }
