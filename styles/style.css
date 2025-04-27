@@ -418,4 +418,8 @@ body:has(.dialog[open]) {
   .button__save svg {
     block-size: 2.0em;
   }
+  .label_decore {
+    top: 22px;
+    right: 11px;
+  }
 }
